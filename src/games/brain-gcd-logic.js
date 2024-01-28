@@ -1,4 +1,3 @@
-import readlineSync from 'readline-sync';
 import game from '../index.js';
 
 const gameRules = 'Find the greatest common divisor of given numbers.';
