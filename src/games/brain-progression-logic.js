@@ -1,11 +1,7 @@
 import game from '../index.js';
+import getRandomNumber from '../random-number.js';
 
 const gameRules = 'What number is missing in the progression?';
-
-const getRandomNumber = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-};
-
 
 const generateProgression = (start, step, length) => {
     const progression = [];
@@ -14,7 +10,6 @@ const generateProgression = (start, step, length) => {
     }
     return progression;
 };
-
 
 const setGame = () => {
     const firstStep = getRandomNumber(1, 10);
@@ -26,7 +21,7 @@ const setGame = () => {
     const wrightAnswer = `${hiddenIndex}`;
     progression[randomIndex] = '..';
     const question = progression.join(' ');
-    //const wrightAnswer = `${hiddenIndex}`;
+    // const wrightAnswer = `${hiddenIndex}`;
     return [question, wrightAnswer];
 };
 

@@ -1,12 +1,7 @@
-import readlineSync from 'readline-sync';
 import game from '../index.js';
+import getRandomNumber from '../random-number.js';
 
 const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
-const gameRounds = 3;
-
-const getRandomNumber = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-};
 
 const setGame = () => {
     const question = getRandomNumber(1, 100);

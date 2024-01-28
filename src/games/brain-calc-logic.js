@@ -1,12 +1,8 @@
-import game from "../index.js";
+import game from '../index.js';
+import getRandomNumber from '../random-number.js';
 
 const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 const operations = ['+', '-', '*'];
-
-const getRandomNumber = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-};
-
 const calculate = (num1, num2, operator) => {
     switch (operator) {
         case '+':
@@ -16,7 +12,7 @@ const calculate = (num1, num2, operator) => {
         case '*':
             return num1 * num2;
         default:
-            'Неизвестный оператор';
+            return 'Неизвестный оператор';
     }
 };
 
