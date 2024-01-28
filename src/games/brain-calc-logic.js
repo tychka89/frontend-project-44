@@ -1,7 +1,7 @@
 import game from '../index.js';
 import getRandomNumber from '../random-number.js';
 
-const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
+const gameRules = 'What is the result of the expression?';
 const operations = ['+', '-', '*'];
 const calculate = (num1, num2, operator) => {
     switch (operator) {
